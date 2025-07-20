@@ -2,7 +2,9 @@
 <template>  
   <Mainvisual/>
   <LabTop />
-  <Dialog />
+  <DepartmentTop />
+  <Schedule />
+  <!-- <Dialog /> -->
 </template>
 
 <script>
@@ -10,13 +12,17 @@
 import Dialog from './Dialog.vue'
 import Mainvisual from './Mainvisual.vue'
 import LabTop from './LabTop.vue'
+import DepartmentTop from './DepartmentTop.vue';
+import Schedule from './Schedule.vue';
 
 export default {
   name: 'App',
   components:{
     Dialog,
     Mainvisual,
-    LabTop
+    LabTop,
+    DepartmentTop,
+    Schedule
   }
 }
 </script>
