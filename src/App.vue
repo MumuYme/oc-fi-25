@@ -3,10 +3,10 @@
 <template>  
   
     <div id="app">
-      <PasswardGate>
+      <PasswordGate>
       <navigation />
       <router-view />
-      </PasswardGate>
+      </PasswordGate>
     </div>
   
 </template>

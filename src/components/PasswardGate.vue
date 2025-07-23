@@ -11,34 +11,35 @@
 </template>
 
 <script>
+// PasswardGate.vue の <script> 部分
+
 import bcrypt from 'bcryptjs';
 
 export default {
-  data() {
-    return {
-      password: '',
-      error: '',
-      isAuthenticated: false,
-    }
-  },
-  mounted() {
-    const auth = localStorage.getItem('authenticated');
-    if (auth === 'true') {
-      this.isAuthenticated = true;
-    }
-  },
-  methods: {
-    checkPassword() {
-      const hashedPassword = '$2b$10$E5MhoK/dwhd/yw/cbafl9eA1u8oufe5aL46aHH2cU84ovmDcZXFGO'; // ← さっき作ったハッシュ
+  data() {
+    return {
+      password: '',
+      error: '',
+      // ★ 変更点: mountedからここに移動
+      // コンポーネント作成時にlocalStorageの値で初期化する
+      isAuthenticated: localStorage.getItem('authenticated') === 'true', 
+    }
+  },
+  mounted() {
+    // ★ 変更点: このフックは不要になるので削除してもOK
+  },
+  methods: {
+    checkPassword() {
+      const hashedPassword = '$2b$10$E5MhoK/dwhd/yw/cbafl9eA1u8oufe5aL46aHH2cU84ovmDcZXFGO';
 
-      if (bcrypt.compareSync(this.password, hashedPassword)) {
-        localStorage.setItem('authenticated', 'true');
-        this.isAuthenticated = true;
-      } else {
-        this.error = 'パスワードが間違っています';
-      }
-    }
-  }
+      if (bcrypt.compareSync(this.password, hashedPassword)) {
+        localStorage.setItem('authenticated', 'true');
+        this.isAuthenticated = true;
+      } else {
+        this.error = 'パスワードが間違っています';
+      }
+    }
+  }
 }
 </script>
 
