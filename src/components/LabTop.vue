@@ -10,7 +10,7 @@
                     </div>
                     <div class="p-5 h-auto">
                         <div @click="openModle(lab)" data-modal-target="01" data-modal-toggle="01">
-                            <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">{{ lab.name }}研究室</h5>
+                            <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">{{ lab.name }}</h5>
                         </div>
                         <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
                             {{ lab.description.length > 30 
