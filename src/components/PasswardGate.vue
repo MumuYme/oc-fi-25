@@ -30,7 +30,7 @@ export default {
   },
   methods: {
     checkPassword() {
-      const hashedPassword = '$2b$10$5074qhqxSo4VGN07HfId/Ocyld.wISIwowAUf.SiIcF0euIDUhwMu';
+      const hashedPassword = '$2b$10$3EanKmPZSnFKmMvf.dMk4uhDxrJgQJX0ik9X5WDVMsaRqr0EIapXi';
 
       if (bcrypt.compareSync(this.password, hashedPassword)) {
         localStorage.setItem('authenticated', 'true');
