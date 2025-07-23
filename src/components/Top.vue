@@ -1,10 +1,12 @@
 
 <template>  
+<div class="justify-items-center">
   <Mainvisual/>
   <LabTop />
   <DepartmentTop />
   <Schedule />
   <!-- <Dialog /> -->
+   </div>
 </template>
 
 <script>

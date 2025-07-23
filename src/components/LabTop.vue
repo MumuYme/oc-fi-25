@@ -1,6 +1,6 @@
 <template>
     
-    <div class="place-self-center w-4/5">
+    <div class="w-4/5">
         <p class="text-xl font-bold mt-20">研究室紹介</p><!--どうしようmargin-->
         <div class="flex overflow-x-auto mt-4">
             <div class="flex flex-nowrap">
