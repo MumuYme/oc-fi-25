@@ -1,6 +1,6 @@
 
 <template>  
-<div class="justify-items-center">
+<div class="justify-items-center w-full">
   <Mainvisual/>
   <LabTop />
   <DepartmentTop />
