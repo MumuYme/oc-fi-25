@@ -1,6 +1,6 @@
 
 <template>  
-<div class="justify-items-center w-full">
+<div class="flex flex-col items-center">
   <Mainvisual/>
   <LabTop />
   <DepartmentTop />
