@@ -1,6 +1,6 @@
 
 <template>
-  <img :src="imageUrl" alt="説明" class="w-screen h-auto">
+  <img id="home" :src="imageUrl" alt="説明" class="w-screen h-auto">
 </template>
 
 <script>

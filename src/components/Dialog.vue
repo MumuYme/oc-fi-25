@@ -21,8 +21,8 @@
                         {{ lab?.name }}
                     </h3>
                     <div class="flex items-center">
-                        <MapPinIcon class="h-6 w-6 text-black" />
-                        <p>{{ lab?.place }}</p>
+                        <MapPinIcon class="h-6 w-6 text-white" />
+                        <p class="text-white">{{ lab?.place }}</p>
                     </div>
                 </div>
                 <button type="button" data-modal-hide="01" class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 ms-auto inline-flex justify-center items-center dark:hover:bg-gray-600 dark:hover:text-white">
@@ -44,7 +44,7 @@
                 
                     <button data-modal-hide="01" type="button" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
                         <div class="flex items-center">
-                            <MapIcon class="h-6 w-6 text-black" />
+                            <MapIcon class="h-6 w-6 text-white" />
                         地図</div>
                     </button>
                 
