@@ -1,5 +1,5 @@
 <template>
-    <div id="#schedule" class="w-4/5 mt-24">
+    <div id="schedule" class="w-4/5 mt-24">
         <p  class="text-xl font-bold mb-10">スケジュール</p>        
         <ol class="relative border-s border-gray-200 dark:border-gray-700">                  
             <li  v-for="(events, hour) in schedules" :key="hour" class="ms-4">
