@@ -1,7 +1,7 @@
 <template>
     
     <div class="w-4/5">
-        <p class="text-xl font-bold mt-20">研究室紹介</p><!--どうしようmargin-->
+        <p id="lab" class="text-xl font-bold mt-20">研究室紹介</p><!--どうしようmargin-->
         <div class="flex overflow-x-auto mt-4">
             <div class="flex flex-nowrap">
                 <div v-for="lab in $store.state.labs" :key="lab.name" class="shrink-0 md:w-xs w-3xs bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700 m-3">
