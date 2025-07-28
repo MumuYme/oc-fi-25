@@ -25,10 +25,11 @@
             </div>
   </div>
   <div class="w-4/5 mt-20">
-    <p class="text-xl font-bold">卒業者数 113名</p>
-    <p class="text-xl font-bold">進学率30.0%</p>
-    <p class="text-xl font-bold">入学者定員</p>
-    <p class="text-xl font-bold">男女比</p>
+    <p class="text-xl font-bold">卒業者数 116名</p>
+    <p class="text-xl font-bold">進学率30.2%</p>
+    <p class="text-xl font-bold">入学者定員 110名</p>
+    <p class="text-xl font-bold">男女比 8:2</p>
+    <p class="text-xl font-bold">※2024年度入学</p>
   </div>
 </div>
 </template>

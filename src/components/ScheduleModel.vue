@@ -32,7 +32,7 @@
             </div>
             <!-- Modal footer -->
             <div class="flex items-center p-4 md:p-5 border-t border-gray-200 rounded-b dark:border-gray-600">
-                <button data-modal-hide="01" type="button" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                <button  @click="openMap()" type="button" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
                       <div class="flex font-kiwi items-center">
                           <MapIcon class="h-6 w-6 text-white" />
                       地図</div>
@@ -41,10 +41,24 @@
         </div>
     </div>
 </div>
+
+<!-- 地図モーダル -->
+<div v-if="showMap" @click.self="closeMap" class="fixed z-[999] top-0 left-0 w-full h-full bg-black/60 flex justify-center items-center">
+  <div class="relative max-w-3xl w-[90%]">
+    <img src="/maps/map01.svg" alt="Map Image" class="w-full h-auto rounded-lg shadow-lg border border-white">
+    <button @click="closeMap"
+      class="absolute top-2 right-2 text-white bg-black/50 hover:bg-black/80 rounded-full p-2">
+      <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M6 18L18 6M6 6l12 12"/>
+      </svg>
+    </button>
+  </div>
+</div>
 </template>
 
 <script setup>
-import { onMounted } from 'vue'
+import { onMounted, ref } from 'vue'
 import { initFlowbite } from 'flowbite'
 import { MapPinIcon,MapIcon } from '@heroicons/vue/24/outline'
 
@@ -57,4 +71,14 @@ const props = defineProps({
 onMounted(() => {
     initFlowbite();
 })
+
+const showMap = ref(false)
+
+const openMap = () => {
+  showMap.value = true
+}
+
+const closeMap = () => {
+  showMap.value = false
+}
 </script>

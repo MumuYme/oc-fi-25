@@ -2,6 +2,7 @@
   <div v-if="!isAuthenticated" class="password-overlay">
     <div class=" bg-[url(/bg/passwordBg.jpeg)] bg-cover w-screen  h-screen">
       <div class="bg-white/30 backdrop-blur-xs w-full h-full flex flex-col justify-center items-center space-y-4">
+        <img src="/logo.svg" class="h-60 pb-5" alt="Logo" />
         <div class="mx-2">
           <input id="default-input" v-model="password" type="password" placeholder="パスワード" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
         </div>
