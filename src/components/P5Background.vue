@@ -60,7 +60,7 @@ const sketch = (p) => {
   p.setup = () => {
     p.createCanvas(p.windowWidth, p.windowHeight).parent(canvasContainer.value);
     // 円を80個生成して配列に入れる
-    const numberOfCircles = 45;
+    const numberOfCircles = 25;
     for (let i = 0; i < numberOfCircles; i++) {
       circles.push(new Circle());
     }

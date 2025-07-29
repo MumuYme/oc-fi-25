@@ -1,5 +1,6 @@
 import { createStore } from 'vuex';
 import createPersistedState from "vuex-persistedstate"
+import Attention from './components/Attention.vue';
 const map04 = '../public/maps/map04.jpg';
 const map05 = '../public/maps/map05.jpg';
 
@@ -121,12 +122,14 @@ export const store = createStore({
           title: '学科説明会',
           place: '2号館5階 2501/2505',
           description: '「どのようなことが学べるか？」など学科の特徴を20分でお伝えします。',
+          margin: 'mb-2'
         },
         '02':{ timeId: '11',
           time: '11:15-11:45',
           title: '総合型選抜・学校推薦型選抜ガイダンス',
           place: '1号館2階 丹羽ホール',
           description: '推薦入試やAO入試などをお考えの受験生必見！面接のポイント（教員は何を見るのか？）など、オープンキャンパスでしか聞けない情報を得られます！',
+          margin: 'mt-2'
         },},
        '12:00': {
         '01':{ timeId: '12',
@@ -134,12 +137,14 @@ export const store = createStore({
           title: '学科説明会',
           place: '2号館5階 2501/2505',
           description: '「どのようなことが学べるか？」など学科の特徴を20分でお伝えします。',
+          margin: 'mb-2'
         },
         '02':{ timeId: '12',
           time: '12:15-12:45',
           title: '一般選抜・共通テスト利用選抜ガイダンス',
           place: '5号館2階 5203',
           description: '試験科目は？ 昨年度の受験倍率・合格最低点は？ 併願方法についても詳しく解説します！',
+          margin: 'mt-2'
         },
       },
         '13:00':{
@@ -148,18 +153,21 @@ export const store = createStore({
           title: '学科説明会',
           place: '2号館5階 2501/2505',
           description: '「どのようなことが学べるか？」など学科の特徴を20分でお伝えします。',
+          margin: 'mb-4'
         },
         '02':{ timeId: '13',
           time: '13:15-13:45',
           title: '総合型選抜・学校推薦型選抜ガイダンス',
           place: '1号館2階 丹羽ホール',
           description: '推薦入試やAO入試などをお考えの受験生必見！面接のポイント（教員は何を見るのか？）など、オープンキャンパスでしか聞けない情報を得られます！',
+          margin: 'mt-2 mb-2'
         },
         '03':{ timeId: '13',
           time: '13:15-13:45',
           title: '一般選抜・共通テスト利用選抜ガイダンス',
           place: '5号館2階 5203',
           description: '試験科目は？ 昨年度の受験倍率・合格最低点は？ 併願方法についても詳しく解説します！',
+          margin: 'mt-4'
         },
       },
        '14:00': {
@@ -168,21 +176,27 @@ export const store = createStore({
           title: '学科説明会',
           place: '2号館5階 2501/2505',
           description: '「どのようなことが学べるか？」など学科の特徴を20分でお伝えします。',
+          margin: 'mb-4'
         },
         '02':{ timeId: '14',
           time: '14:15-14:45',
           title: '総合型選抜・学校推薦型選抜ガイダンス',
           place: '1号館2階 丹羽ホール',
           description: '推薦入試やAO入試などをお考えの受験生必見！面接のポイント（教員は何を見るのか？）など、オープンキャンパスでしか聞けない情報を得られます！',
+          margin: 'mt-2 mb-2'
         },
         '03':{ timeId: '14',
           time: '14:15-14:45',
           title: '一般選抜・共通テスト利用選抜ガイダンス',
           place: '5号館2階 5203',
           description: '試験科目は？ 昨年度の受験倍率・合格最低点は？ 併願方法についても詳しく解説します！',
+          margin: 'mt-4'
         },
       },
       },      
+      Attention:{
+        
+      }
   
         }
     },

@@ -3,6 +3,7 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import Top from '../components/Top.vue'
 import Department from '../components/Department.vue'
+import Attention from '../components/Attention.vue'
 
 const routes = [
   {
@@ -14,6 +15,11 @@ const routes = [
     path: '/department',
     name: 'department',
     component: Department,
+  },
+  {
+    path: '/attention',
+    name: 'attention',
+    component: Attention,
   }
 ]
 
