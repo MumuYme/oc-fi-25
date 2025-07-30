@@ -2,12 +2,12 @@
   <div class="relative">
 
     <img 
-      :src="getImageUrl('assets/mainvisual-mobile.jpeg')" 
+      :src="mobileImg" 
       alt="モバイル用のメインビジュアル" 
       class="w-screen block md:hidden h-auto"
     >
     <img 
-      :src="getImageUrl('assets/mainvisual.jpeg')" 
+      :src="pcImg" 
       alt="PC用のメインビジュアル" 
       class="hidden md:block w-screen h-auto"
     >
@@ -23,16 +23,9 @@
   </div>
 </template>
 
-<script>
-export default {
-  name: 'Mainvisual',
-  methods: {
-    // Viteで動的にアセットを読み込むためのヘルパーメソッド
-    getImageUrl(path) {
-      return new URL(path, import.meta.url).href;
-    }
-  }
-}
+<script setup>
+import mobileImg from '../assets/mainvisual-mobile.jpeg'
+import pcImg from '../assets/mainvisual.jpeg'
 </script>
 
 <style scoped>
