@@ -2,12 +2,12 @@
   <div class="relative">
 
     <img 
-      :src="getImageUrl('../../assets/mainvisual-mobile.jpeg')" 
+      :src="getImageUrl('assets/mainvisual-mobile.jpeg')" 
       alt="モバイル用のメインビジュアル" 
       class="w-screen block md:hidden h-auto"
     >
     <img 
-      :src="getImageUrl('../../assets/mainvisual.jpeg')" 
+      :src="getImageUrl('assets/mainvisual.jpeg')" 
       alt="PC用のメインビジュアル" 
       class="hidden md:block w-screen h-auto"
     >
