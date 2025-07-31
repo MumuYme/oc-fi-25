@@ -4,7 +4,8 @@
 
 <script setup>
 import p5 from 'p5';
-import { onMounted, onUnmounted, ref } from 'vue';
+import { onMounted, onUnmounted, ref, nextTick } from 'vue';
+
 
 // canvasを描画するdiv要素への参照を作成
 const canvasContainer = ref(null);
@@ -84,11 +85,14 @@ const sketch = (p) => {
 };
 
 // コンポーネントがマウントされたらp5のインスタンスを作成
-onMounted(() => {
-  // <div ref="canvasContainer"> が描画された後に実行されるため
-  // canvasContainer.value は null にならない
-  p5Instance = new p5(sketch, canvasContainer.value);
+onMounted(async () => {
+  await nextTick();
+  console.log('canvasContainer:', canvasContainer.value); // nullじゃないか確認
+  if (canvasContainer.value) {
+    p5Instance = new p5(sketch, canvasContainer.value);
+  }
 });
+
 
 // コンポーネントがアンマウントされたらp5のインスタンスを削除
 onUnmounted(() => {

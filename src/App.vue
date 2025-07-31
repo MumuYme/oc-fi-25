@@ -3,8 +3,8 @@
 <template>  
   
     <div id="app">
-      <PasswardGate>
       <P5Background />
+      <PasswardGate>
       <navigation />
       <router-view />
       <Footer />
