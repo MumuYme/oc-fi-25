@@ -4,8 +4,9 @@
         <p  class="font-kiwi text-2xl font-semibold mt-20">研究室紹介</p><!--どうしようmargin-->
         <div class="flex overflow-x-auto mt-4">
             <div class="flex flex-nowrap">
-                <div v-for="lab in $store.state.labs" :key="lab.name" class="p-2 shrink-0 md:w-xs w-3xs backdrop-blur-xl bg-white/20 border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800/30 dark:border-gray-700 m-3 flex flex-col">
-  
+                <div v-for="lab in $store.state.labs" :key="lab.name" class="p-2 shrink-0 md:w-xs w-3xs backdrop-blur-xl bg-gradient-to-tl from-blue-500/20 from- via-blue-300/20 via- border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800/30 dark:border-gray-700 m-3 flex flex-col">
+                <!-- <div v-for="lab in $store.state.labs" :key="lab.name" class="p-2 shrink-0 md:w-xs w-3xs backdrop-blur-xl bg-white/20 border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800/30 dark:border-gray-700 m-3 flex flex-col"></div> -->
+
                 <div @click="openModle(lab)" data-modal-target="01" data-modal-toggle="01">
                     <img class="rounded-t-lg w-[318px] h-[179px] object-cover" :src="lab.imagePath" alt="" />
                 </div>
