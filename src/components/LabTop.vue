@@ -21,12 +21,30 @@
                     </p>
                     </div>
 
-                    <button @click="openModle(lab)" data-modal-target="01" data-modal-toggle="01" class="self-center inline-flex justify-end items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg ">
-                    <p>Read more</p>
+                    <!-- <button @click="openModle(lab)" data-modal-target="01" data-modal-toggle="01" class="self-center inline-flex justify-end items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg ">
+                    <p>Read more</p> -->
                     <!-- <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
                         <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
                     </svg> -->
-                    </button>
+                    <!-- </button> -->
+                    <LiquidGlassButton
+                    :width="300"
+                    :height="40"
+                    :borderRadius="28"
+                    :innerShadowColor="'#000000'"
+                    :innerShadowBlur="15"
+                    :innerShadowSpread="-5"
+                    :glassTintColor="'#ffffff'"
+                    :glassTintOpacity="0"
+                    :frostBlurRadius="0"
+                    :noiseFrequency="0.008"
+                    :noiseStrength="77"
+                    
+                     @click="openModle(lab)" data-modal-target="01" data-modal-toggle="01"
+                    @mouseenter="handleButtonMouseEnter"
+                    @mouseleave="handleButtonMouseLeave">
+                    <p class="text-blue-700 font-semibold">Read more</p>
+                </LiquidGlassButton>
                 </div>
                 </div>
             </div>
@@ -40,6 +58,7 @@
 import { ref, onMounted } from 'vue';
 import { initFlowbite } from 'flowbite';
 import Dialog from './Dialog.vue'
+import { LiquidGlassLink, LiquidGlassButton, LiquidGlassContainer } from '@tinymomentum/liquid-glass-vue'
 
 // Flowbiteの機能を有効にするために必須
 onMounted(() => {
