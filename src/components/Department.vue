@@ -8,27 +8,50 @@
   </div>
   
   <div class="w-4/5 mt-20">
-    
           <h2 class="text-xl font-semibold mb-3 font-kiwi">カリキュラム紹介動画</h2>
           <div class="p-5 rounded-2xl bg-white/20 backdrop-blur-xl">
-            <p class="font-kiwi">
-              情報メディア学科のカリキュラムの特色と卒業後の進路に関して、井ノ上
-              寛人准教授から受験生へのメッセージを聞くことができます（この動画は、現在、電大YouTubeキャンパスに公開されていません）。
-            </p>
-            <div class="video">
-              <iframe
-                width="100%"
-                height="auto"
-                src="https://www.youtube-nocookie.com/embed/r2HoMUIYbKc"
-                title="YouTube video player"
-                frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowfullscreen
-                class="pt-6 mb-3"
-              ></iframe>
+              <p class="font-kiwi">
+                情報メディア学科のカリキュラムの特色と卒業後の進路に関して、井ノ上
+                寛人准教授から受験生へのメッセージを聞くことができます。
+              </p>
+              <div class="video">
+                <iframe 
+                  width="100%"
+                  height="auto" 
+                  src="https://www.youtube.com/embed/G_b_DIl2mYk?si=sueyr4k0jXuyDsSl"
+                  title="YouTube video player" 
+                  frameborder="0" 
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                  referrerpolicy="strict-origin-when-cross-origin" 
+                  allowfullscreen
+                  class="pt-6 mb-3"
+                ></iframe>
+                </div>
             </div>
-     </div>
-  </div>
+    </div>
+
+     <div class="w-4/5 mt-20">
+          <h2 class="text-xl font-semibold mb-3 font-kiwi">よくある質問動画</h2>
+          <div class="p-5 rounded-2xl bg-white/20 backdrop-blur-xl">
+              <p class="font-kiwi">
+                受験生からよくある質問に関して、井ノ上
+                寛人准教授と佐藤隆教授から受験生へのメッセージを聞くことができます。
+              </p>
+              <div class="video">
+                <iframe 
+                  width="100%"
+                  height="auto" 
+                  src="https://www.youtube.com/embed/gNpi87XNVn4?si=2YKTS0LXXjVlx9-E"
+                  title="YouTube video player" 
+                  frameborder="0" 
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                  referrerpolicy="strict-origin-when-cross-origin" 
+                  allowfullscreen
+                  class="pt-6 mb-3"
+                ></iframe>
+              </div>
+            </div>
+        </div>
   <div class="w-4/5 mt-20 p-5 rounded-2xl bg-white/20 backdrop-blur-xl">
     <p class="text-xl font-kiwi font-mideum m-2 flex justify-start">
       <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
