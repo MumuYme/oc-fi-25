@@ -19,6 +19,7 @@ import PasswardGate from './components/PasswardGate.vue';
 import P5Background from './components/P5Background.vue';
 import Footer from './components/Footer.vue';
 
+
 export default {
   name: 'App',
   components:{
