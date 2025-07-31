@@ -1,7 +1,7 @@
 <template>
 
 <div class="p-9 md:p-8">
-<nav class="bg-white/30 backdrop-blur-3xl fixed w-full z-20 top-0 start-0 border-gray-200 dark:bg-gray-900">
+<nav class="bg-white/80 backdrop-blur-3xl fixed w-full z-20 top-0 start-0 border-gray-200 dark:bg-gray-900">
   <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
     <router-link to="/" class="flex items-center space-x-3 rtl:space-x-reverse">
         <img src="/logo.svg" class="md:h-20 h-10" alt="Logo" />
@@ -29,9 +29,6 @@
         </li>
         <li>
           <router-link :to="{ path: '/', hash: '#schedule' }" @click="closeMenu" class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">スケジュール</router-link>
-        </li>
-        <li>
-          <a href="#" class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">地図</a>
         </li>
         <li>
           <a href="https://forms.gle/2vVL4USWN1c54DE57" class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">アンケート</a>
