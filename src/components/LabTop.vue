@@ -31,7 +31,7 @@
                     :width="300"
                     :height="40"
                     :borderRadius="28"
-                    :innerShadowColor="'#1d4ed8'"
+                    :innerShadowColor="'#93c5fd'"
                     :innerShadowBlur="26"
                     :innerShadowSpread="-12"
                     :glassTintColor="'#ffffff'"
