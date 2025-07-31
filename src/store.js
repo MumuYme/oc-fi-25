@@ -1,8 +1,8 @@
 import { createStore } from 'vuex';
 import createPersistedState from "vuex-persistedstate"
 import Attention from './components/Attention.vue';
-const map04 = '../public/maps/map04.jpg';
-const map05 = '../public/maps/map05.jpg';
+const map04 = '/maps/map04.jpg';
+const map05 = '/maps/map05.jpg';
 
 export const store = createStore({
     state (){
