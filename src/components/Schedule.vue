@@ -1,6 +1,6 @@
 <template>
-    <div id="schedule" class="w-4/5 mt-24">
-        <p  class="font-zen-maru-gothic text-4xl font-bold mt-20 text-blue-600 text-center text-shadow-lg/70 text-shadow-blue-200 mb-6">スケジュール</p>      
+    <div id="schedule" class="w-4/5 mt-20">
+        <p  class="font-zen-maru-gothic text-4xl font-bold text-blue-600 text-center text-shadow-lg/70 text-shadow-blue-200 mb-6">スケジュール</p>      
         <div class="p-5 rounded-2xl bg-gradient-to-tl from-blue-500/20 from- via-blue-300/20 via- backdrop-blur-xl">  
         <ol class="relative border-s border-blue-800 dark:border-gray-700">                  
             <li  v-for="(events, hour) in schedules" :key="hour" class="ms-4 font-kiwi">
