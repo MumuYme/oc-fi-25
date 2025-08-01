@@ -7,9 +7,9 @@
         <!-- Modal content -->
         <div class="relative bg-white/40 backdrop-blur-xl rounded-lg shadow-sm dark:bg-gray-700">
             <!-- Modal header -->
-            <div class="flex items-center justify-between p-4 md:p-5 border-b rounded-t dark:border-gray-600 border-gray-200">
+            <div class="flex items-center justify-between p-4 md:p-5 border-b rounded-t border-blue-200">
                 <div>
-                    <h3 class="text-xl font-kiwi font-semibold  text-white dark:text-white">
+                    <h3 class="text-xl font-kiwi font-medium  text-blue-100 dark:text-white">
                         {{ lab?.name }}
                     </h3>
                     <div class="flex items-center">
@@ -26,15 +26,15 @@
             </div>
             <!-- Modal body -->
             <div class="p-4 md:p-5 space-y-4">
-                <p class="mb-2.5 font-kiwi text-lg leading-relaxed text-white dark:text-gray-400">研究内容</p>
+                <p class="mb-2.5 font-kiwi text-lg leading-relaxed text-blue-100">研究内容</p>
                 <p class="text-base leading-relaxed font-kiwi text-white dark:text-gray-400" >
                     {{ lab?.description }}
                 </p>
             </div>
             <!-- Modal footer -->
-            <div class="flex items-end p-4 md:p-5 border-t border-gray-200 rounded-b dark:border-gray-600">
+            <div class="flex items-end p-4 md:p-5 border-t border-blue-200 rounded-b ">
                 
-                    <button  @click="openMap(lab)" type="button" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                    <button  @click="openMap(lab)" type="button" class="text-white border-2 border-blue-100 font-medium rounded-lg text-sm px-5 py-2.5 text-center">
                         <div class="flex items-center font-kiwi">
                             <MapIcon class="h-6 w-6 text-white" />
                         地図</div>

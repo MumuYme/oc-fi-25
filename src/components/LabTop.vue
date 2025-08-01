@@ -1,10 +1,10 @@
 <template>
     
     <div class="w-4/5" id="lab">
-        <p  class="font-kiwi text-2xl font-semibold mt-20">研究室紹介</p><!--どうしようmargin-->
+        <p  class="font-kiwi text-2xl font-semibold mt-20 font-blue-700">研究室紹介</p><!--どうしようmargin-->
         <div class="flex overflow-x-auto mt-4">
             <div class="flex flex-nowrap">
-                <div v-for="lab in $store.state.labs" :key="lab.name" class="p-2 shrink-0 md:w-xs w-3xs backdrop-blur-xl bg-gradient-to-tl from-blue-500/20 from- via-blue-300/20 via- border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800/30 dark:border-gray-700 m-3 flex flex-col">
+                <div v-for="lab in $store.state.labs" :key="lab.name" class="p-2 shrink-0 md:w-xs w-3xs backdrop-blur-xs bg-gradient-to-tl from-blue-500/20 from- via-blue-300/20 via- border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800/30 dark:border-gray-700 m-3 flex flex-col">
                 <!-- <div v-for="lab in $store.state.labs" :key="lab.name" class="p-2 shrink-0 md:w-xs w-3xs backdrop-blur-xl bg-white/20 border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800/30 dark:border-gray-700 m-3 flex flex-col"></div> -->
 
                     <div @click="openModle(lab)" data-modal-target="01" data-modal-toggle="01">
@@ -15,7 +15,7 @@
                         
                         <div>
                         <div @click="openModle(lab)" data-modal-target="01" data-modal-toggle="01">
-                            <p class="mb-2 min-h-[3rem] font-kiwi text-base whitespace-pre-line font-semibold tracking-tight text-gray-900 dark:text-white">{{ lab.name }}</p>
+                            <p class="mb-2 min-h-[3rem] font-kiwi text-base whitespace-pre-line font-semibold tracking-tight text-gray-700 dark:text-white">{{ lab.name }}</p>
                         </div>
                         <p class="mb-3 font-kiwi text-base text-gray-700 dark:text-gray-400 overflow-hidden line-clamp-3">
                             {{ lab.description }}
