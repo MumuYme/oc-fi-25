@@ -2,7 +2,7 @@
 
 <template>  
   <div class="w-4/5 mt-20">
-    <p class="text-2xl font-semibold font-kiwi mb-3">学科紹介</p><!--どうしようmargin-->
+    <p class="font-zen-maru-gothic text-4xl font-bold text-blue-600 text-center text-shadow-lg/70 text-shadow-blue-200 mb-5">学科紹介</p><!--どうしようmargin-->
     <div class="p-5 rounded-2xl bg-white/20 backdrop-blur-xl">
     <p class="font-kiwi font-normal mb-3">未来科学部情報メディア学科（通称FI科：School of Science and Technology for Future Life, Department of Information Systems and Multimedia Design）では、ITサービスを研究・開発するために必要とされるコンピュータサイエンスと、多様性の時代に求められる創造力、表現力、感性を養うデジタルメディア技術について学ぶことができます。</p>
     

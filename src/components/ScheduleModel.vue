@@ -29,7 +29,7 @@
             </div>
             <!-- Modal body -->
             <div class="p-4 md:p-5 space-y-4">
-                <p class="mb-2.5 text-lg leading-relaxed font-kiwi text-white dark:text-gray-400">タイムスケジュール</p>
+                <p class="mb-2.5 text-lg leading-relaxed font-kiwi text-blue-100">タイムスケジュール</p>
                 <p class="text-base leading-relaxed text-white font-kiwi dark:text-gray-400" >
                     {{ ScheduleEvent?.description }}
                 </p>

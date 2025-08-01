@@ -1,10 +1,12 @@
-@import url("https://fonts.googleapis.com/css2?family=Kiwi+Maru:wght@300;400;500&family=Lora:ital,wght@0,400..700;1,400..700&display=swap"); 
+@import url("https://fonts.googleapis.com/css2?family=Kiwi+Maru:wght@300;400;500&family=Hachi+Maru+Pop&family=Lora:ital,wght@0,400..700;1,400..700&family=Zen+Maru+Gothic:wght@300;400;500;700;900&display=swap"); 
 @import "tailwindcss";
 @import "flowbite/src/themes/default";
 @plugin "flowbite/plugin";
 @theme {
   --font-lora: "Lora", serif; 
   --font-kiwi: "Kiwi Maru",  sans-serif;
+  --font-hachi-maru-pop: "Hachi Maru Pop",  sans-serif;
+  --font-zen-maru-gothic: "Zen Maru Gothic",  sans-serif;
 }
 .font-kiwi {
   font-family: var(--font-kiwi);
@@ -12,4 +14,10 @@
 
 .font-lora {
   font-family: var(--font-lora);
+}
+.font-hachi-maru-pop {
+  font-family: var(--font-hachi-maru-pop);
+}
+.font-zen-maru-gothic {
+  font-family: var(--font-zen-maru-gothic);
 }

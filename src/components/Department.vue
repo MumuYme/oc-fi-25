@@ -1,14 +1,14 @@
 <template>  
 <div class="flex flex-col items-center">
-  <div class="w-4/5 mt-15">
-    <p class="text-2xl font-bold mb-3 font-kiwi">学科紹介</p><!--どうしようmargin-->
+  <div class="w-4/5 mt-10">
+    <p class="font-zen-maru-gothic text-5xl font-bold mt-3 text-blue-600 text-center text-shadow-lg/70 text-shadow-blue-200 mb-3">学科紹介</p><!--どうしようmargin-->
     <div class="p-5 rounded-2xl bg-white/20 backdrop-blur-xl">
     <p class="mb-3 font-kiwi">未来科学部情報メディア学科（通称FI科：School of Science and Technology for Future Life, Department of Information Systems and Multimedia Design）では、ITサービスを研究・開発するために必要とされるコンピュータサイエンスと、多様性の時代に求められる創造力、表現力、感性を養うデジタルメディア技術について学ぶことができます。</p>
     </div>
   </div>
   
   <div class="w-4/5 mt-20">
-          <h2 class="text-xl font-semibold mb-3 font-kiwi">カリキュラム紹介動画</h2>
+          <h2 class="text-xl font-zen-maru-gothic font-bold mt-3 text-blue-800 text-center text-shadow-lg/70 text-shadow-blue-200 mb-3 ">カリキュラム紹介動画</h2>
           <div class="p-5 rounded-2xl bg-white/20 backdrop-blur-xl">
               <p class="font-kiwi">
                 情報メディア学科のカリキュラムの特色と卒業後の進路に関して、井ノ上
@@ -31,7 +31,7 @@
     </div>
 
      <div class="w-4/5 mt-20">
-          <h2 class="text-xl font-semibold mb-3 font-kiwi">よくある質問動画</h2>
+          <h2 class="text-xl font-zen-maru-gothic font-bold mt-3 text-blue-800 text-center text-shadow-lg/70 text-shadow-blue-200 mb-3 ">よくある質問動画</h2>
           <div class="p-5 rounded-2xl bg-white/20 backdrop-blur-xl">
               <p class="font-kiwi">
                 受験生からよくある質問に関して、井ノ上

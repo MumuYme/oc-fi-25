@@ -18,8 +18,7 @@ const sketch = (p) => {
   // 円を管理するための配列
   let circles = [];
   // 使用する色のパレット
-  const colors = ['#4287F5', '#89CFF0', '#A0D2EB', '#87ceeb']; // 青、ベビーブルー、ライトブルー、カデットブルー
-
+  const colors = ['#38bdf8','#bae6fd', '#89CFF0', '#A0D2EB', '#87ceeb']; // 青、ベビーブルー、ライトブルー、カデットブルー
   // 円の設計図（クラス）
   class Circle {
     constructor() {
@@ -27,7 +26,7 @@ const sketch = (p) => {
       this.x = p.random(p.width);
       this.y = p.random(p.height);
       // 半径は10pxから35pxのランダムな大きさ
-      this.r = p.random(10, 35);
+      this.r = p.random(15, 35);
       // X方向とY方向の移動速度
       this.vx = p.random(-0.8, 0.8);
       this.vy = p.random(-0.8, 0.8);
@@ -61,7 +60,7 @@ const sketch = (p) => {
   p.setup = () => {
     p.createCanvas(p.windowWidth, p.windowHeight).parent(canvasContainer.value);
     // 円を80個生成して配列に入れる
-    const numberOfCircles = 25;
+    const numberOfCircles = 23;
     for (let i = 0; i < numberOfCircles; i++) {
       circles.push(new Circle());
     }
