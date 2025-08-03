@@ -36,7 +36,7 @@
             </div>
             <!-- Modal footer -->
             <div class="flex items-center p-4 md:p-5 border-t border-blue-100 rounded-b">
-                <button  @click="openMap()" type="button" class="text-white focus:ring-4 border-2 border-blue-100 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center">
+                <button  @click="openMap(ScheduleEvent)" type="button" class="text-white focus:ring-4 border-2 border-blue-100 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center">
                       <div class="flex font-kiwi items-center">
                           <MapIcon class="h-6 w-6 text-white" />
                       地図</div>
@@ -49,7 +49,7 @@
 <!-- 地図モーダル -->
 <div v-if="showMap" @click.self="closeMap" class="fixed z-[999] top-0 left-0 w-full h-full bg-black/60 flex justify-center items-center">
   <div class="relative max-w-3xl w-[90%]">
-    <img src="/maps/map01.svg" alt="Map Image" class="w-full h-auto rounded-lg shadow-lg border border-white">
+    <img :src="selectedSchedule?.mapimg" alt="Map Image" class="w-full h-auto rounded-lg shadow-lg border border-white">
     <button @click="closeMap"
       class="absolute top-2 right-2 text-white bg-black/50 hover:bg-black/80 rounded-full p-2">
       <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -77,12 +77,15 @@ onMounted(() => {
 })
 
 const showMap = ref(false)
+const selectedSchedule = ref(null)
 
-const openMap = () => {
+const openMap = (scheduleData) => {
+  selectedSchedule.value = scheduleData
   showMap.value = true
 }
 
 const closeMap = () => {
   showMap.value = false
+  selectedSchedule.value = null
 }
 </script>
