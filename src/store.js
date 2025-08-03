@@ -70,7 +70,7 @@ export const store = createStore({
           place: '1号館5階 メディアラボ',
           description: '環境情報や生体情報を取得活用するIoTを始め、Edge-AI、ビッグデータ、映像認識、xR、機械学習システムの研究を行っています。防災・環境・生体モニタリング、ウェアラブル、位置情報、空間スキャン、行動解析、映像解析、ブラウザ技術、LLM+RAG応用を研究しています。',
           imagePath: '/labs/実空間コンピューティング.svg',
-          mapimg: '/maps/群知能⾃律モビリティ.jpg',
+          mapimg: '/maps/群知能自律モビリティ.jpg',
         },
         {
           id: 'lab-9',
